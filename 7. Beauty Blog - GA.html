@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BeautyBlog-Mirra</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Licorice&family=Love+Light&family=Montserrat:ital,wght@0,200;0,600;1,400&family=Oooh+Baby&family=Qwitcher+Grypen:wght@400;700&family=Waterfall&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://i.imgur.com/aXEC0Jy.png">
+    <link rel="stylesheet" href=
+   "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      *{
+        margin: auto;
+        padding: 0;
+      }
+      header {
+        text-align: center;
+        background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1376484/jess-harding-lqT6NAmTaiY-unsplash.jpg") ;
+        
+        background-size: cover;
+        max-width: 100%;
+        color: #009DAE;
+        font-family: "Montserrat", sans-serif;   
+       
+      }     
+      #headerImg {
+      margin: 30px 0px 15px 0px;
+      background-position: center;
+      border: 7px solid ;
+      border-color: rgba(255, 255, 255, .4);
+      border-radius: 250px;
+      width: 250px;
+      text-shadow: 2px 2px 4px grey;
+      }
+      header h1{
+        color: #FFE400;
+        margin-bottom: 20px;
+        margin-top: 0px;
+        font-size: 400%;
+        font-weight: normal;
+        font-family: 'Waterfall', cursive;
+        line-height: 100px;
+        text-shadow: 1px 1px 5px #FFFCDC, 0 0 1px #FF8E00, 0 0 8px white;
+      }
+      header h1 span{
+        font-size: 200%
+        }
+      nav{
+        display: flex;
+        background-color: white;
+        opacity: .5;
+        justify-content: space-between;
+        align-items: flex-end;
+        max-width: 100%;        
+      }
+
+      li {
+        display: inline;        
+        padding: 0px 5px 0px 0px;  
+        text-align: left; 
+        line-height: 5px;        
+      }
+      ul {
+       
+       margin-bottom: 0;
+       margin-top: 0;     
+        
+      }
+      header a{
+        text-decoration: none;
+        color: #009DAE;
+        font-size: 25px;
+        padding: 5px; 
+        text-shadow: 0px 1px 4px grey;
+        }
+      header a:hover{
+        color: #F2789F;
+        
+        }
+      i {
+        color: #F2789F;
+        font-size: 20px;} 
+      i:hover{
+        color: #009DAE;
+        font-size: 40px ;
+      }
+      #catogery{
+        max-width: auto;
+        height: auto;
+        display: flex;
+        flex-flow: row wrap;      
+        background-color: white;
+        gap: 5px 5px;
+        margin-bottom: 5%;
+      }     
+      div .catogeryChild{
+        margin-top: 1%;
+        background-image: url("https://images.pexels.com/photos/1030870/pexels-photo-1030870.jpeg?cs=srgb&dl=pexels-daria-shevtsova-1030870.jpg&fm=jpg");
+        background-size: cover;
+        background-position: center;
+        width: 32%;
+        height: 300px;
+        border-radius: 20px; 
+        display: flex;
+        align-content: center;
+        font-family: 'Lucida Sans', sans-serif;
+        color: aliceblue;       
+      }
+      div .catogeryChild a{
+        text-decoration: none;
+        font-family: 'Lucida Sans', sans-serif;
+        color: white;
+        text-align: center;
+        font-size: 150%;
+        line-height: 50px;
+        text-shadow: 2px 2px 4px pink;
+      }
+      div .catogeryChild a:hover{
+        font-size: 220%;        
+      }
+      #catChild2{
+        background-image: url("https://images.pexels.com/photos/2533266/pexels-photo-2533266.jpeg?cs=srgb&dl=pexels-suzy-hazelwood-2533266.jpg&fm=jpg");
+      }
+      #catChild3{
+        background-image: url("https://images.pexels.com/photos/2669718/pexels-photo-2669718.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+      }
+      #catChild4{
+        background-image: url("https://i.pinimg.com/564x/a0/f3/a8/a0f3a8d8a455dae9be1bd75385b2f053.jpg");
+      }
+      #catChild5{
+        background-image: url("https://images.pexels.com/photos/2464535/pexels-photo-2464535.jpeg?cs=srgb&dl=pexels-aleksandar-pasaric-2464535.jpg&fm=jpg");
+      }
+      #catChild6{
+        background-image: url("https://images.pexels.com/photos/6163749/pexels-photo-6163749.jpeg?cs=srgb&dl=pexels-marko-klaric-6163749.jpg&fm=jpg");
+      }
+      #catChild7{
+        background-image: url("https://images.pexels.com/photos/2043590/pexels-photo-2043590.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+      }
+      #catChild8{
+        background-image: url("https://images.pexels.com/photos/3677150/pexels-photo-3677150.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+      }
+      #catChild9{
+        background-image: url("https://images.pexels.com/photos/4631077/pexels-photo-4631077.jpeg?cs=srgb&dl=pexels-cottonbro-4631077.jpg&fm=jpg");
+      }
+      article {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        max-width: 70%;      
+        padding: 20px;
+        font-family: "Montserrat", sans-serif; 
+
+      }
+      article h2{
+        color: #009DAE;
+        font-size: 150%;
+        text-align: center;        
+      }
+      article p {
+        color: #766161;
+        font-size: 70%;
+        text-align: justify;
+      }
+      article img{        
+        border-radius: 30px;
+        max-width: 100%;
+      }
+      .containerLike{
+        margin-top: 10px;        
+        display:inline-flex;
+        align-items: flex-start;               
+      }
+      button{
+      position: relative;
+      color: #F2789F;
+      font-size: 150%;
+      border: none;
+      background-color: white;
+           
+      }
+      button:hover{
+        cursor: pointer;
+      }
+      #count{
+        font-weight: bold;
+        padding-left: 10px;
+        font-size: 100%
+        color: grey;
+      }
+  @media (max-width: 800px){
+    #headerImg {
+      margin: 0 auto; 
+      width: 55%
+    }
+        header li {
+          display: block;
+          padding: 5px;
+
+          }
+        header a{
+          font-size: 15px;
+        }
+
+        div .catogeryChild{
+        width: 32%;
+        height: 100px;        
+      }
+      div .catogeryChild a{
+        font-size: 60%;
+        line-height: 15px;
+      }
+      div .catogeryChild a:hover{
+        font-size: 80%; 
+        
+      }
+      article h2{
+        font-size: 100%;     
+      }
+      article p {        
+        font-size: 50%;        
+      }
+      }
+    </style>
+  </head>
+  <bod>
+    <header>
+      <img id="headerImg" src="https://i.imgur.com/ROeI7CV.jpg?1"> 
+      <h1>BeautyBlog-<span>Mirra</span></h1>
+      <nav>
+      <ul class=navBar>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Review</a></li>
+        <li><a href="#">Location</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class=socialLink>
+        <a href="https://www.facebook.com/mui.tan.1/"><i class="fa fa-facebook-f"></i></a>
+        <a href="https://www.facebook.com/mui.tan.1/"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.facebook.com/mui.tan.1/"><i class="fa fa-instDagram"></i></a>          
+        <a href="https://www.facebook.com/mui.tan.1/"><i class="fa fa-pinterest"></i></a>
+        <a href="https://www.facebook.com/mui.tan.1/"><i class="fa fa-heart"></i></a> 
+        <a href="#" id="topSearch"><i  class="fa fa-search"></i></a>  </div>     
+      </div> 
+    </nav>
+    </header>
+    <div id="catogery">
+      <div class="catogeryChild" id="catChild1" ><a href="#">HEALTHY LIFESTYLE</a></div>
+      <div class="catogeryChild" id="catChild2"><a href="#">LIPSTICK REVIEW</a></div>
+      <div class="catogeryChild" id="catChild3"><a href="#">SKIN CARE</a></div>
+      <div class="catogeryChild" id="catChild4"><a href="#">ART NAIL</a></div>
+      <div class="catogeryChild" id="catChild5"><a href="#">PHOTOGRAPHY TIPSs</a></div>
+      <div class="catogeryChild" id="catChild6"><a href="#">DIY</a></div>
+      <div class="catogeryChild" id="catChild7"><a href="#">DRESS-UP TIPS</a></div>
+      <div class="catogeryChild" id="catChild8"><a href="#">DIETS & MEALS FOR SENIOR</a></div>
+      <div class="catogeryChild" id="catChild9"><a href="#">NO FRIEND WITH BAD HABIT</a></div>
+    </div>
+    <article>
+      <h2>NOVEMBER FAVOURITES, UPDATES AND WISHLIST</h2>
+      <img src="https://images.pexels.com/photos/3018845/pexels-photo-3018845.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+      Consequat interdum varius sit amet mattis vulputate. Amet nisl purus in mollis nunc sed id semper. Varius sit amet mattis vulputate enim nulla. 
+      Faucibus purus in massa tempor nec feugiat nisl pretium. Id semper risus in hendrerit gravida rutrum quisque non. 
+      Volutpat lacus laoreet non curabitur gravida arcu ac tortor dignissim. Eu volutpat odio facilisis mauris sit amet massa vitae. Odio pellentesque diam volutpat commodo sed. Augue eget arcu dictum varius duis at consectetur. Euismod quis viverra nibh cras. Tortor vitae purus faucibus ornare suspendisse sed. 
+      Proin nibh nisl condimentum id venenatis. Dolor sit amet consectetur adipiscing elit ut aliquam. Magnis dis parturient montes nascetur.</p>
+    <div class="containerLike">      
+      <button class = "like" id="btn"> ❤ </button>
+      <h4 id="count">0</h4>
+    </div>
+    </article>    
+
+   <script>
+     let count=0;
+     const button = document.getElementById("btn");
+     const textHolder = document.getElementById("count");
+     textHolder.innerHTML = count;     
+     button.addEventListener("click",function(){textHolder.innerHTML=count++; 
+     })
+   </script>
+  </body>
+</html>
